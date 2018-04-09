@@ -6,6 +6,7 @@ import time
 
 Client = discord.Client()
 client = commands.Bot(command_prefix = "!!")
+token = open("token.txt","r").readline()
 
 
 
@@ -95,4 +96,4 @@ async def on_message(message):
 
 
 
-client.run("NDMyMjYzNTg1MzU2NDQ3NzY0.Daqy4w.RlAaoEfk04sR9aNy_JClLWShdbE")
+client.run(token)
